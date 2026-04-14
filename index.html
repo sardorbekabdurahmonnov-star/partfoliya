@@ -7,30 +7,269 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
+
+<div class="background-animation"></div>
+
     <header>
-    <div class="logo">𝓢𝓪𝓻𝓭𝓸𝓻𝓫𝓮𝓴 </div>
-    <nav>
-        <a href="#">Men haqimda</a>
-        <a href="#">Oilam</a>
-        <a href="#">Guruhim</a>
-        <a href="#">Loyihalarim</a>
-    </nav>
-</header>
+        <nav class="container navbar">
+            <div class="logo">Sardorbek<span></span></div>
+            <ul class="nav-links">
+                <li><a href="#about" class="active">Men haqimda</a></li>
+                <li><a href="#family">Mening oilam</a></li>
+                <li><a href="#group">Guruhim</a></li>
+                <li><a href="#projects" class="btn-nav">Loyihalarim</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="hero">
-    <div class="text">
-        <h1>Assalomu alaykum!</h1>
-        <h2>Men ismim  <span>Sardorbek</span></h2>
-        <p>Frontend dasturchi. Zamonaviy va chiroyli web saytlar yarataman.</p>
-        <button>Men haqimda</button>
-    </div>
+    <main class="container hero">
+        <div class="hero-info">
+            <span class="greeting">Xush kelibsiz!</span>
+            <h1>Mening ismim <br> <span class="highlight">Sardorbek</span></h1>
+            <p>Men <b>PDP Junior</b> akademiyasining Chilonzor filialida Frontend dasturlash sirlarini professional darajada o'rganmoqdaman.</p>
+            
+            <div class="actions">
+                <a href="#" class="btn-main">Bog'lanish</a>
+            </div>
+        </div>
 
-    <div class="image-box">
-        <img src="your-image.png" alt="profile">
+        <div class="hero-visual">
+            <div class="image-wrapper">
+                <img src="" alt="Sardorbek">
+                <div class="orbit-1"></div>
+                <div class="orbit-2"></div>
+            </div>
+        </div>
+    </main>
+
+    <section class="family-section">
+    <div class="container">
+        <h2 class="section-title">Mening oilam</h2>
+        <p class="section-desc">Biz oilada 5 kishi yashaymiz.Dadam, Onam, Man, Ukam, Singlim </p>
+
+        <div class="family-grid">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="dadam.jpg" alt="Dadam">
+                        <div class="label">Dadam</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Dadam</h3>
+                        <p>Dadam - oilamiz tayanchi. Ular juda mehribon va aqlli insonlar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="onam.jpg" alt="Onam">
+                        <div class="label">Onam</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Onam</h3>
+                        <p>Onam - dunyodagi eng aziz inson. Ularning duolari bizga kuch beradi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="men.jpg" alt="Men">
+                        <div class="label">Men</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Sardorbek</h3>
+                        <p>Frontend dasturlashga juda qiziqaman va hozirda o'qiyapman.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card bottom-row">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="ukam.jpg" alt="Ukam">
+                        <div class="label">Ukam</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Ukam</h3>
+                        <p>Ukam juda sho'x va sport bilan shug'ullanishni yaxshi ko'radi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card bottom-row">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="singlim.jpg" alt="Singlim">
+                        <div class="label">Singlim</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Singlim</h3>
+                        <p>Singlim juda aqlli va rasm chizishga mahorati baland.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-   
+ <section class="group" id="group">
+            <div class="container">
+                <h2 class="group-title">Mening guruhim</h2>
+                <div class="group-wrapper">
+                    <input
+                        class="slider-input"
+                        id="s1"
+                        type="radio"
+                        name="slider"
+                        checked
+                    />
+                    <input
+                        class="slider-input"
+                        id="s2"
+                        type="radio"
+                        name="slider"
+                    />
+                    <input
+                        class="slider-input"
+                        id="s3"
+                        type="radio"
+                        name="slider"
+                    />
+                    <input
+                        class="slider-input"
+                        id="s4"
+                        type="radio"
+                        name="slider"
+                    />
+                    <input
+                        class="slider-input"
+                        id="s5"
+                        type="radio"
+                        name="slider"
+                    />
+                    <input
+                        class="slider-input"
+                        id="s6"
+                        type="radio"
+                        name="slider"
+                    />
+
+                    <div class="cards">
+                        <label for="s1" id="slide1">
+                            <div class="card">
+                                <div class="image-box">
+                                    <img
+                                        class="card-pic"
+                                        src="./"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="slide-info">
+                                    <h3 class="slide-title">Abduvoris</h3>
+                                    <p class="slide-desc">
+                                        Guruhimizning a'lochi o'quvchilaridan
+                                    </p>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label for="s2" id="slide2">
+                            <div class="card">
+                                <div class="image-box">
+                                    <img
+                                        class="card-pic"
+                                        src="."
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="slide-info">
+                                    <h3 class="slide-title">Abduvoris</h3>
+                                    <p class="slide-desc">
+                                        Guruhimizning a'lochi o'quvchilaridan
+                                    </p>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label for="s3" id="slide3">
+                            <div class="card">
+                                <div class="image-box">
+                                    <img
+                                        class="card-pic"
+                                        src="./cardimage3.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="slide-info">
+                                    <h3 class="slide-title">Abduvoris</h3>
+                                    <p class="slide-desc">
+                                        Guruhimizning a'lochi o'quvchilaridan
+                                    </p>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label for="s4" id="slide4">
+                            <div class="card">
+                                <div class="image-box">
+                                    <img
+                                        class="card-pic"
+                                        src="./cardimage4.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="slide-info">
+                                    <h3 class="slide-title">Abduvoris</h3>
+                                    <p class="slide-desc">
+                                        Guruhimizning a'lochi o'quvchilaridan
+                                    </p>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label for="s5" id="slide5">
+                            <div class="card">
+                                <div class="image-box">
+                                    <img
+                                        class="card-pic"
+                                        src="./cardimage5.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="slide-info">
+                                    <h3 class="slide-title">Abduvoris</h3>
+                                    <p class="slide-desc">
+                                        Guruhimizning a'lochi o'quvchilaridan
+                                    </p>
+                                </div>
+                                </div>
+                            </label>
+
+                            <label for="s6" id="slide6">
+                                <div class="card">
+                                    <div class="image-box">
+                                        <img
+                                            class="card-pic"
+                                            src="./cardimage6.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="slide-info">
+                                        <h3 class="slide-title">Abduvoris</h3>
+                                        <p class="slide-desc">
+                                            Guruhimizning a'lochi o'quvchilaridan                                   
+                                    </p>
+                                </div>
+                            </div>
+                        </label> 
+                    </div>
+                </div>
+            </div>
+        </section>
 
 </body>
 </html>
