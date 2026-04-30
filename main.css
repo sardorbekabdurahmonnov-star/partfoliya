@@ -103,10 +103,16 @@ header {
     line-height: 1.1;
 }
 
+.h1{
+    text-align: left;
+}
+
 .highlight {
     background: linear-gradient(to right, var(--primary), var(--secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: left;
+    display: flex;
 }
 
 .hero-info p {
@@ -349,7 +355,8 @@ header {
 #s3:checked ~ .cards #slide6,
 #s4:checked ~ .cards #slide1,
 #s5:checked ~ .cards #slide2,
-#s6:checked ~ .cards #slide3 {
+#s6:checked ~ .cards #slide3,
+#s7:checked ~ .cards #slide7 {
     transform: translate3d(-70%, 0, -220px);
 }
 
@@ -563,45 +570,57 @@ header {
 
 
 
-.footer {
-  background: #2f4f59;
+
+body {
+  background: #0f172a;
+  font-family: sans-serif;
   text-align: center;
-  padding: 60px 20px;
-  color: #eee;
 }
 
-.footer h2 {
-  font-size: 40px;
+
+.h2 {
+  color: white;
   margin-bottom: 20px;
+  padding-top: 55px;
 }
+
+.footer{
+    background-color: #8fe9fdcb;
+}
+
 
 .footer-links {
-  margin-bottom: 30px;
-  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  
+ 
 }
 
+
 .footer-links a {
-  margin: 0 15px;
+  position: relative;
   text-decoration: none;
-  color: #ddd;
+  color: white;
+  font-size: 16px;
+  padding: 5px 0;
+}
+
+
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #ffff00;
   transition: 0.3s;
 }
 
-.footer-links a:hover {
-  color: #05b0ff;
+.footer-links a:hover::after {
+  width: 100%;
 }
-
-
-.footer-links a {
-  background: linear-gradient(45deg, cyan, blue);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0 10px;
-}
-
-
-
-
 
 
 
@@ -610,14 +629,15 @@ header {
 
 .socials {
   margin-bottom: 25px;
+  padding-top: 40px;
 }
 
 .socials a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   margin: 0 8px;
   border-radius: 50%;
   background: #3b6b7a;
@@ -633,13 +653,13 @@ header {
 }
 
 .copy {
-  font-size: 14px;
+  font-size: 15px;
   color: #ccc;
 }
 
 
 .insta{
-    width: 45px;
+    width: 55px;
 }
 
 
@@ -699,6 +719,8 @@ body {
 }
 
 
-
+.box__title{
+    color: #0a0b10;
+}
 
 
