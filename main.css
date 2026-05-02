@@ -13,6 +13,23 @@
 }
 
 
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+
 
 
 body {
@@ -567,6 +584,7 @@ header {
 
 .gghh{
     text-align: center;
+    font-size: 50px;
 }
 
 
@@ -588,6 +606,7 @@ body {
   color: white;
   margin-bottom: 20px;
   padding-top: 55px;
+  font-size: 50px;
 }
 
 .footer{
@@ -672,8 +691,10 @@ body {
 
 
 
+
+
 .div-nav{
-    background-image: url(./imges/absd.jpg);
+    background-image: url(./imges/);
     /* background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
@@ -729,4 +750,97 @@ body {
     color: #0a0b10;
 }
 
+
+
+
+
+
+
+.about-section {
+    padding: 60px 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20   px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+.main-section {
+            width: 90%;
+            max-width: 1100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        
+        .title {
+            display: flex;
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 60px;
+            padding-left: 400px;
+        }
+
+        
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            width: 100%;
+        }
+
+       
+        .photo-container {
+            flex-shrink: 0;
+            padding: 50px;
+            padding-left: 50px ;
+        }
+
+        .profile-img {
+            width: 260px;
+            height: 380px;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        .info-box {
+            max-width: 600px;
+            padding-left: 85px ;
+        }
+
+        .info-box p {
+            font-size: 28px;
+            font-weight: 800; 
+            line-height: 1.2;
+            margin: 5px 0;
+        }
+
+        
+        .win-activate {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 14px;
+            text-align: left;
+            line-height: 1.3;
+        }
 
