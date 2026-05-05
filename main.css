@@ -151,7 +151,7 @@ header {
     font-weight: 700;
     transition: 0.3s;
 }
-
+            
 .btn-secondary {
     padding: 15px 40px;
     border: 1px solid rgba(255,255,255,0.2);
@@ -251,14 +251,14 @@ header {
 
 
 .flip-card-front {
-    background-color: #1e293b;
+    background-color: #2d5a63;
 }
 
 .flip-card-front img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(80%);
+    filter: grayscale(2%);
 }
 
 .label {
@@ -272,7 +272,7 @@ header {
 }
 
 .flip-card-back {
-    background: linear-gradient(135deg, #7c3aed, #4f46e5);
+    background: linear-gradient(135deg, #000000, #322bb3, #00c9a7 ) ;
     color: white;
     transform: rotateY(180deg);
     display: flex;
@@ -562,8 +562,7 @@ header {
   font-size: 14px;
 }
 
-.gallery:hover .box {
-}
+
 
 .gallery .box:hover {
   transform: scale(1.05);
@@ -609,9 +608,7 @@ body {
   font-size: 50px;
 }
 
-.footer{
-    background-color: #8fe9fdcb;
-}
+
 
 
 .footer-links {
@@ -693,13 +690,7 @@ body {
 
 
 
-.div-nav{
-    background-image: url(./imges/);
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    
-}
+
 
 
  
@@ -764,7 +755,7 @@ body {
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20   px;
+    padding: 0 20px;
     text-align: center;
 }
 
@@ -795,6 +786,7 @@ body {
             font-weight: bold;
             margin-bottom: 60px;
             padding-left: 400px;
+            padding-bottom: 30px;
         }
 
         
@@ -804,13 +796,20 @@ body {
             justify-content: center;
             gap: 50px;
             width: 100%;
+            position: relative;
         }
+          
 
+        .photo-container:hover img{filter: grayscale(1%); transform: scale(1.08) }
        
         .photo-container {
             flex-shrink: 0;
             padding: 50px;
             padding-left: 50px ;
+            position: relative;
+            width: 400px;
+            height: 400px;
+            
         }
 
         .profile-img {
@@ -819,17 +818,20 @@ body {
             border-radius: 15px;
             object-fit: cover;
             box-shadow: 0 0 15px rgba(0,0,0,0.2);
+             width: 100%;
+
         }
 
         .info-box {
             max-width: 600px;
             padding-left: 85px ;
+            text-align: left;
         }
 
         .info-box p {
             font-size: 28px;
             font-weight: 800; 
-            line-height: 1.2;
+            line-height: 1.3;
             margin: 5px 0;
         }
 
